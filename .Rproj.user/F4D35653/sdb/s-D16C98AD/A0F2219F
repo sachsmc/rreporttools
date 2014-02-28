@@ -1,0 +1,16 @@
+{
+    "contents" : "rreporttools\n============\n\nR package to perform common reporting tasks such as querying databases, summing with subtotals, creating Shiny Apps and writing to Excel\n",
+    "created" : 1393599631883.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "176696377",
+    "id" : "A0F2219F",
+    "lastKnownWriteTime" : 1393599647,
+    "path" : "C:/Users/sachsmc/Downloads/rreporttools/README.md",
+    "project_path" : "README.md",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "markdown"
+}

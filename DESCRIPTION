@@ -1,0 +1,32 @@
+Package: rreporttools
+Type: Package
+Title: A small set of tools for performing common reporting tasks
+Version: 0.1
+Date: 2013-11-07
+Author: Michael Sachs <michael.sachs@nih.gov>
+Maintainer: Michael Sachs <michael.sachs@nih.gov>
+Description: rreporttools provides a small set of functions to make our lives
+    easier at the Division of Statistical Analysis and Reporting. These
+    functions extend several packages. We extend data.table and plyr to include
+    totals and subtotals. We also extend xlsx to make formatting
+    almost completely automatic.
+License: GPL-3
+Depends:
+    R (>= 3.0.1),
+    knitr,
+    xlsx,
+    data.table,
+    plyr,
+    RJDBC,
+    reshape2,
+    shiny
+VignetteBuilder: knitr
+Collate:
+    'rreporttools-DTplyWithTotals.R'
+    'rreporttools-authorShiny.R'
+    'rreporttools-convertSASQuery.R'
+    'rreporttools-ddplyWithTotals.R'
+    'rreporttools-formatDataFrame.R'
+    'rreporttools-formatTotals.R'
+    'rreporttools-mydbGetQuery.R'
+    'rreporttools-package.R'

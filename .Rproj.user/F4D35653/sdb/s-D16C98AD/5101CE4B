@@ -1,0 +1,16 @@
+{
+    "contents" : "headsty <- \"text-align:center;background-color:#000099;color:white;font-size:11px;\"  \n\n\nshinyUI(\n    pageWithSidebar(\n      \n          \n      headerPanel(\n                             \n            list(p(\"Organization Name\", \n                     a(\"Contact\", href=\"mailto:example@web.com\", style=headsty), \n                     a(\"www.google.com\",href=\"http://www.google.com\", style=headsty), \n                     style=headsty), \n                    \n                   h6(\"Example Shiny App\", style=\"text-align:center;\")) , windowTitle = \"Example Shiny App\"), \n  \n\n  sidebarPanel(  tags$head(\n       tags$style(type=\"text/css\", \"label.radio { display: inline-block; }\", \".radio input[type=\\\"radio\\\"] { float: none; }\"),\n        tags$style(type=\"text/css\", \"select { max-width: 180px; }\"),\n        tags$style(type=\"text/css\", \"textarea { max-width: 180px; }\"),\n        tags$style(type=\"text/css\", \"text { width: 15px; !important }\"),\n        tags$style(type=\"text/css\", \".jslider { max-width: 240px; }\"),\n        tags$style(type='text/css', \".span4 { max-width: 275px; }\"),\n        tags$title(\"Example Shiny App\")\n      ),\n   \n            \n     h5(\"Example Inputs\"),\n      radioButtons(\"radio\", \"Radio Buttons\", \n                   list(\"Choice 1\" = \"A\", \n                        \"Choice 2\" = \"B\", \n                        \"Choice 3\" = \"C\"))\n                 \n       \n        , \n            \n      \n       \n      selectInput(\"xvar\", p(h5(\"X variable\")), colnames(mtcars)),\n      selectInput(\"yvar\", p(h5(\"Y variable\")), colnames(mtcars), selected = \"cyl\"),\n                 \n    checkboxInput(\"check\", \"CheckboxInput with Conditional Panel\", value = TRUE),\n    conditionalPanel(condition = \"input.check == true\", \n    p(h5(\"This only displays when the checkbox is checked\"))\n     ), \n      \n      sliderInput(\"slide\", \"sliderInput\", 0, 100, 0, animate = TRUE)\n      \n       \n     \n      ,\n             downloadButton(\"downloadData\", \"Download Data in Excel\"),\n                       downloadButton(\"downloadFigure\", \"Download Figure as png\"),\n           \n                 \n              helpText( list(p(\"Questions or Comments? Email\", \n                     a(\"example@email.com\", href=\"mailto:example@email.com\", \n                       style=headsty) ), \n                                           p(\"Notes go here\", style = \"font-size:9px\")))\n           \n           ),\n    \n   mainPanel( tabsetPanel(   tabPanel(\"Plot\", plotOutput(\"plot\")), \n                            tabPanel(\"Table\", dataTableOutput(\"table\")))\n            )\n    \n    \n  \n))\n",
+    "created" : 1393600330621.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "731451429",
+    "id" : "5101CE4B",
+    "lastKnownWriteTime" : 1393600388,
+    "path" : "C:/Users/sachsmc/Downloads/rreporttools/inst/shinyskel/ui.R",
+    "project_path" : "inst/shinyskel/ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
